@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ARKS-ID</title>
+        <link rel="stylesheet" href="css/card.css">
+    </head>
+    <body>
+        <!-- Make the ARKS-ID. -->
+        <!--Side note: most of these IDs and classes are just made for easy access. If you need to change them, please don't hesitate to; it's for science!-->
+        <section id="arksCard">
+            <!-- Card Header -->
+            <header class="cardHeader">
+                <h3>Basic Data</h3>
+            </header>
+            <!-- Main Card Region -->
+            <main class="cardContainer">
+                <!-- Left-Hand Side (Where the Player Information Goes)-->
+                <div class="cardInformation">
+                    <!-- The Player's Title -->
+                    <div class="systemColor cardTitleWrapper">
+                        <span id="cardTitle" >Temporary Title</span>
+                    </div>
+                    <!-- The Player's SEGA ID -->
+                    <div class="playerIDNameField">
+                        <span class="systemColor">Player ID Name</span>
+                        <span id="playerIDName" class="clear">Temporary</span>
+                    </div>
+                    <!-- The Player ID (This can probably chnage if you want.) -->
+                    <div class="playerIDField">
+                        <span class="systemColor">Player ID</span>
+                        <span id="playerID" class="clear">00000000</span>
+                    </div>
+                    <!-- In the game, there's just an empty space, this is to recreate this. -->
+                    <div>
+                        <span class="systemColor">-</span>
+                        <span>-</span>
+                    </div>
+                    <!-- Their most well-known character. -->
+                    <div class="recentCharacterField">
+                        <span class="systemColor">Recent Character</span>
+                        <span id="recentCharacter" class="clear">Tempy</span>
+                    </div>
+                    <!-- Player Biography -->
+                    <div class="biography">
+                        <p id="biography">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque distinctio aperiam quaerat perferendis cum quam, ad totam optio fuga quisquam?
+                        </p>
+                    </div>
+                    <!-- The Player's set Sticker -->
+                    <div class="stickerField">
+                        <img src="#" alt="The Sticker Field" id="idSticker">
+                    </div>
+                    <!-- The Submit and Clear Buttons -->
+                    <div class="editButtons">
+                        <div class="searchSection">    
+                            <button type = "submit">Search</button>
+                            <input type = "text" placeholder = "Enter Character Name" name = "Search">
+                        </div>
+                        <button onclick="clearButton()">Clear</button>
+                    </div>
+                </div>
+                <!-- The Picture Section -->
+                <div class="cardPictures">
+                    <!-- Player Screenshot -->
+                    <img src="#" alt="A Player Character" id="idPicture">
+                    <!-- Player Banner -->
+                    <img src="#" alt="A Player's Banner" id="idBanner">
+                </div>
+            </main>
+        </section>
+
+        <script src="js/main.js"></script>
+        
+    </body>
+</html>

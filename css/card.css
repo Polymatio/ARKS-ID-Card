@@ -1,0 +1,134 @@
+/* Box Model Hack */
+
+* {
+    box-sizing: border-box;
+  }
+/* Outline for CSS Diagnosis */
+
+*{
+    outline: black 1px solid;
+}
+/* Clear fix hack */
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+/* Clear Hack */
+
+.clear {
+    clear: both;
+}
+/* Base work of css file*/
+
+body{
+    background-image: linear-gradient(to right, #090d14, #121e36, #133061);
+    color: white;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+}
+/* Sets the ARKS-ID's Height and Width */
+
+#arksCard{
+    width:  75vw;
+    height: 50vh;
+}
+#arksCard > *{
+    margin:0;
+}
+/* Player Biography settings, allows for the biography to stay centered in the left side of the ARKS-ID.*/
+
+.biography{
+    width: 100%;
+    justify-content: center;
+}
+/* This allows for the background color of the biography field to stay reasonably spaced away from the text. Sets the Biography to 75% Width of the Left side of the ARKS-ID.*/
+
+#biography{
+    background-color: #0d141e;
+    width: 75%;
+    padding: 2%;
+}
+/* Attaches the Header to the Main ARKS-ID. Disconnects if not set.*/
+
+.cardHeader>*{
+    margin:0;
+}
+/* The Base of the ARKS-ID. Sets the background color, and flex properties.*/
+
+.cardContainer{
+    background-color: #151e2f;
+    display: flex;
+    flex-direction: row;
+}
+/* Since there are only 2 sections to the ARKS-ID. The Width of every section is set to 50% This divides the ID in Half.*/
+
+.cardContainer>*{
+    width: 50%;
+}
+/* Align the Right Side of the ARKS-ID Stacks the Picture on top of the banner If you want, you can put it below the banner by reversing the order in the HTML File.*/
+
+.cardPictures{
+    display: flex;
+    flex-direction: column;
+}
+/* Allows for the Pictures to take up all of the right side. */
+
+.cardPictures>*{
+    width: 100%;
+}
+/* Allows for the space in between the label and Information Just like in-game.*/
+
+.cardInformation > *{
+    display:flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #283140;
+}
+/* Centers the title on the ARKS ID's Left Side.*/
+
+.cardTitleWrapper{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+/* Centers the Sticker and constrains it to be slightly smaller than the biography.*/
+
+
+
+.stickerField{
+    width:100%;
+    display:flex;
+    justify-content: center;
+}
+#idSticker{
+    width:60%;
+    height:75%;
+}
+/* Adds the Neccessary Spacing between the Buttons */
+.editButtons{
+    justify-content: space-around;
+}
+
+/******************
+ **** COLORING ****
+ ******************/
+
+/* The Coloring for the header */
+
+.cardHeader{
+    background-color: #2e6297;
+}
+/* The same blue coloring for system and title text in PSO2 */
+
+.systemColor{
+    color: #82cefa;
+}
+
+@media all and (min-width:1920px) {
+
+}
