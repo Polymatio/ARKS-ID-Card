@@ -17,8 +17,10 @@ app.use('/js', express.static(__dirname + '/js'));
 
 /*Assigning Routers*/
 const cardRouter = require('./routes/card');
+const arksRouter = require('./routes/arks');
 
 app.use('/card', cardRouter);
+app.use('/arks', arksRouter);
 
 /*Listen function to connect to a PORT*/
 app.listen(PORT, ()=>{
