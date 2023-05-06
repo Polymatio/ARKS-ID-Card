@@ -114,6 +114,11 @@ body{
 .editButtons{
     justify-content: space-around;
 }
+#idPicture {
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
 
 /******************
  **** COLORING ****
