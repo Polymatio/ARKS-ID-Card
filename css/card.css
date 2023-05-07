@@ -53,6 +53,7 @@ body{
     background-color: #0d141e;
     width: 100%;
     padding: 2%;
+    height: 415px;
 }
 /* Attaches the Header to the Main ARKS-ID. Disconnects if not set.*/
 
@@ -139,5 +140,6 @@ body{
 @media all and (min-width:1920px) {
     #arksCard {
         width: 1520px;
+        height: 50vh;
     }
 }
