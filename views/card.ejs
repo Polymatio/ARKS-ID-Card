@@ -9,6 +9,41 @@
     </head>
     <body>
         <!-- Make the ARKS-ID. -->
+        <header id="titleCenter">
+            <h1 class="center">ARKS Card ID Generator</h1>
+        </header>
+        <section id="arksCardBuildSection">
+            <div class="section-container">
+                <h3>Create ARKS ID Card</h3>
+            </div>
+            <form onsubmit="return false">
+                <div class="form-element">
+                    <label class="form-label">
+                        Enter Player ID Name:
+                    </label>
+                    <input type="text" id="insertIDName"/>
+                </div>
+                <div class="form-element">
+                    <label class="form-label">
+                        Enter Player ID:
+                    </label>
+                    <input type="text" id="insertPlayerName"/>
+                </div>
+                <div class="form-element">
+                    <label class="form-label">
+                        Enter Recent Character:
+                    </label>
+                    <input type="text" id="insertCharacter"/>
+                </div>
+                <div class="form-element">
+                    <label class="form-label">
+                        Enter Biography:
+                    </label>
+                    <input type="text" id="insertBio"/>
+                </div>
+                <button onclick="generateArksCard()">Generate ARKS Card</button>
+            </form>
+        </section>
         <!--Side note: most of these IDs and classes are just made for easy access. If you need to change them, please don't hesitate to; it's for science!-->
         <section id="arksCard">
             <!-- Card Header -->
@@ -31,7 +66,7 @@
                     <!-- The Player ID (This can probably chnage if you want.) -->
                     <div class="playerIDField">
                         <span class="systemColor">Player ID</span>
-                        <span id="playerID" class="clear">00000000</span>
+                        <span id="playerID" class="clear"></span>
                     </div>
                     <!-- In the game, there's just an empty space, this is to recreate this. -->
                     <div>
@@ -41,13 +76,11 @@
                     <!-- Their most well-known character. -->
                     <div class="recentCharacterField">
                         <span class="systemColor">Current Character</span>
-                        <span id="recentCharacter" class="clear">Tempy</span>
+                        <span id="recentCharacter" class="clear"></span>
                     </div>
                     <!-- Player Biography -->
                     <div class="biography">
-                        <p id="biography">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque distinctio aperiam quaerat perferendis cum quam, ad totam optio fuga quisquam?
-                        </p>
+                        <span id="biography"></span>
                     </div>
                     <!-- The Player's set Sticker -->
                     <div class="stickerField">
@@ -75,6 +108,7 @@
         <script src="js/main.js"></script>
         <script src="js/upload.js"></script>
         <script src="js/download.js"></script>
+        <script src="js/final.js"></script>
         
     </body>
 </html>

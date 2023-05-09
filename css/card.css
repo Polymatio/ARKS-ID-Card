@@ -28,15 +28,40 @@
 body{
     background-image: linear-gradient(to right, #090d14, #121e36, #133061);
     color: white;
-    display:flex;
+    display:block;
     justify-content: center;
     align-content: center;
+}
+/*Set form for ARKS Card ID*/
+
+#titleCenter h1 {
+    text-align: center;
+}
+#arksCardBuildSection {
+    height: 60vh;
+}
+#arksCardBuildSection h3{
+    text-align: center;
+}
+form button {
+    
+}
+.form-element {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    min-width: 200px;
+}
+.form-label {
+    min-width: 150px;
 }
 /* Sets the ARKS-ID's Height and Width */
 
 #arksCard{
     width:  75vw;
     height: 50vh;
+    display: none;
 }
 #arksCard > *{
     margin:0;
