@@ -37,18 +37,40 @@ body{
 #titleCenter h1 {
     text-align: center;
 }
+#logoTitle {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    padding: 15px;
+}
 #arksCardBuildSection {
     height: 60vh;
+    display: flex;
+    justify-content: space-evenly;
 }
-#arksCardBuildSection h3{
-    text-align: center;
+#arksCardBuildSection button {
+    margin-top: 50px;
+    margin-left: 110px;
+    background-image: linear-gradient(to left, #5b7aaf, #133061);
+    color:#ffffff;
+    font-size: 150%;
 }
-form button {
-    
+button:hover {
+    transform: scale(1.1);
+}
+form {
+    margin-top: 1px;
 }
 .form-element {
     margin: 10px;
     padding: 10px;
+    display: flex;
+    justify-content: center;
+    min-width: 200px;
+}
+.form-image {
+    margin-top: 15px;
+    margin-left: 80px;
     display: flex;
     justify-content: center;
     min-width: 200px;

@@ -27,6 +27,7 @@ function generateArksCard() {
     document.getElementById("arksCard").style.display = "block";
 
     // Remove ARKS Card ID Generator form display
-    document.getElementById("titleCenter").style.display= "none";    
+    document.getElementById("titleCenter").style.display= "none";
+    document.getElementById("logoTitle").style.display= "none"; 
     document.getElementById("arksCardBuildSection").style.display= "none";
 }

@@ -12,10 +12,10 @@
         <header id="titleCenter">
             <h1 class="center">ARKS Card ID Generator</h1>
         </header>
+        <section id="logoTitle">
+            <a href="/"><img src="/css/assets/logos/ngs_title.png"></a>
+        </section>
         <section id="arksCardBuildSection">
-            <div class="section-container">
-                <h3>Create ARKS ID Card</h3>
-            </div>
             <form onsubmit="return false">
                 <div class="form-element">
                     <label class="form-label">
@@ -40,6 +40,12 @@
                         Enter Biography:
                     </label>
                     <input type="text" id="insertBio"/>
+                </div>
+                <div class="form-image">
+                    <label class="form-label">
+                        Insert Image:
+                    </label>
+                    <input type ="file" id="characterPicture" accept="image/png, image/jpg">
                 </div>
                 <button onclick="generateArksCard()">Generate ARKS Card</button>
             </form>
@@ -85,14 +91,6 @@
                     <!-- The Player's set Sticker -->
                     <div class="stickerField">
                         <img src="#" alt="The Sticker Field" id="idSticker">
-                    </div>
-                    <!-- The Submit and Clear Buttons -->
-                    <div class="editButtons">
-                        <div class="searchSection">    
-                            <input type = "file" id="characterPicture" accept="image/png, image/jpg">
-                        </div>
-                        <button type="button" class="button" data-download="arksCard">Download</button>
-                        <button onclick="clearButton()">Clear</button>
                     </div>
                 </div>
                 <!-- The Picture Section -->
