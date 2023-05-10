@@ -8,39 +8,58 @@
         <link rel="stylesheet" href="css/card.css">
     </head>
     <body>
-        <!-- Make the ARKS-ID. -->
+        <!-- Make the ARKS-ID-->
+        <!--Title of the ARKS ID Card Form-->
         <header id="titleCenter">
             <h1 class="center">ARKS Card ID Generator</h1>
         </header>
+        <!--Logo of the Form Route-->
         <section id="logoTitle">
             <a href="/"><img src="/css/assets/logos/ngs_title.png"></a>
         </section>
+        <!--Section for the form to generate the PSO2 ARKS ID Card-->
         <section id="arksCardBuildSection">
+            <!--Logo for the left side of the form-->
+            <div id="leftLogo">
+                <img src="/css/assets/logos/ngs_arks_logo.png">
+            </div>
+            <!--Form to fill out information for the ARKS ID Card to generate-->
             <form onsubmit="return false">
+                <div class="form-element">
+                    <label class="form-label">
+                        Enter ARKS Title:
+                    </label>
+                    <input type="text" id="insertCardTitle"/>
+                </div>
+                <!--Form for Player ID Name-->
                 <div class="form-element">
                     <label class="form-label">
                         Enter Player ID Name:
                     </label>
                     <input type="text" id="insertIDName"/>
                 </div>
+                <!--Form for Player ID-->
                 <div class="form-element">
                     <label class="form-label">
                         Enter Player ID:
                     </label>
                     <input type="text" id="insertPlayerName"/>
                 </div>
+                <!--Form for Recent Character-->
                 <div class="form-element">
                     <label class="form-label">
                         Enter Recent Character:
                     </label>
                     <input type="text" id="insertCharacter"/>
                 </div>
+                <!--Form for Biography-->
                 <div class="form-element">
                     <label class="form-label">
                         Enter Biography:
                     </label>
                     <input type="text" id="insertBio"/>
                 </div>
+                <!--Form for Image-->
                 <div class="form-image">
                     <label class="form-label">
                         Insert Image:
@@ -49,6 +68,10 @@
                 </div>
                 <button onclick="generateArksCard()">Generate ARKS Card</button>
             </form>
+            <!--Logo for the right side of the form-->
+            <div id="rightLogo">
+                <img src="/css/assets/logos/ngs_arks_logo.png">
+            </div>
         </section>
         <!--Side note: most of these IDs and classes are just made for easy access. If you need to change them, please don't hesitate to; it's for science!-->
         <section id="arksCard">
@@ -62,7 +85,7 @@
                 <div class="cardInformation">
                     <!-- The Player's Title -->
                     <div class="systemColor cardTitleWrapper">
-                        <span id="cardTitle" >Temporary Title</span>
+                        <span id="cardTitle" ></span>
                     </div>
                     <!-- The Player's SEGA ID -->
                     <div class="playerIDNameField">
@@ -98,7 +121,6 @@
                     <!-- Player Screenshot -->
                     <div id="idPicture"></div>
                     <!-- Player Banner -->
-                    <img src="#" alt="A Player's Banner" id="idBanner">
                 </div>
             </main>
         </section>
@@ -106,7 +128,7 @@
         <script src="js/main.js"></script>
         <script src="js/upload.js"></script>
         <script src="js/download.js"></script>
-        <script src="js/final.js"></script>
+        <script src="js/generator.js"></script>
         
     </body>
 </html>
