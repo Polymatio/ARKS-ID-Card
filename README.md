@@ -15,3 +15,7 @@ express, express-flash, express-session, nodemon, html2canvas
 ```
 npm install
 ```
+
+## Optimization
+
+Create a database for users to add their save ARKS ID Card in the website. Build an API to counter-measure illegal activities in the website database.
