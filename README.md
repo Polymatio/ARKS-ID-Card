@@ -8,7 +8,7 @@ It will create a custom ARKS ID Card like in the base game of PSO2. Great to use
 
 ## Packages/Dependencies used 
 
-express, express-flash, express-session, nodemon
+express, express-flash, express-session, nodemon, html2canvas
 
 ## Install all the dependencies of node packages used for development via terminal
 

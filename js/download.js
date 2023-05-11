@@ -1,17 +1,12 @@
-const downloadLinks = document.querySelectorAll("[data-download");
+document.getElementById("download").onclick = function() {
+    const screenShotTarget = document.getElementById("arksCard");
 
-downloadLinks.forEach(button => {
-    const id = button.dataset.download;
-    const image = document.getElementById(id);
-    const a = document.createElement("a");
-
-    a.href = image.src;
-    a.download = "";
-    a.style.display = "none";
-
-    button.addEventListener("click", () => {
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a);
-    })
-});
+    html2canvas(screenShotTarget).then((canvas) => {
+        const baseImage = canvas.toDataURL("image/png");
+        let anchor = document.createElement('a');
+        anchor.setAttribute("href", baseImage);
+        anchor.setAttribute("download", "my-arks-card.png");
+        anchor.click();
+        anchor.remove();
+    });
+}

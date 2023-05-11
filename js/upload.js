@@ -9,3 +9,15 @@ characterPicture.addEventListener("change", function() {
     });
     reader.readAsDataURL(this.files[0]);
 })
+
+const stickerPicture = document.querySelector("#stickerPicture");
+let uploaded_sticker_image = "";
+
+stickerPicture.addEventListener("change", function() {
+    const reader = new FileReader();
+    reader.addEventListener("load", () => {
+        uploaded_sticker_image = reader.result;
+        document.querySelector("#idSticker").style.backgroundImage = `url(${uploaded_sticker_image})`
+    });
+    reader.readAsDataURL(this.files[0]);
+})
