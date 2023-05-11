@@ -22,6 +22,11 @@ function generateArksCard() {
     // Assign the value of location name to generated card
     document.getElementById("recentCharacter").innerHTML = characterValue;
 
+    // Get value of character team from form input
+    const teamValue = document.getElementById("insertTeam").value
+    // Assign the value of team to generate card
+    document.getElementById("currentTeam").innerHTML = teamValue
+
     // Get value of biography from form input
     const biographyValue = document.getElementById("insertBio").value;
     // Assign the value of biography to generated card
