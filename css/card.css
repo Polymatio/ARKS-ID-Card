@@ -84,7 +84,7 @@ form {
 
 #arksCard{
     width:  75vw;
-    height: 50vh;
+    height: 41vh;
     margin-top: 250px;
     display: none;
 }
@@ -203,6 +203,6 @@ form {
 @media all and (min-width:1280px) {
     #arksCard {
         width: 1000px;
-        height: 50vh;
+        height: 650px;
     }
 }
