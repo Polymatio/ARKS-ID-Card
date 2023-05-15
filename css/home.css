@@ -114,6 +114,7 @@ article {
     main p {
         font-size: 150%;
         margin: 35px;
+        display: none;
     }
     .pageLogo {
         height: auto;
