@@ -200,6 +200,33 @@ form {
 }
 /*Add media query to adjust size of ARKS Card from devices resolution*/
 
+@media all and (max-width:950px) {
+    #logoTitle img {
+        height: auto;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    #arksCardBuildSection {
+        height: auto;
+    }
+    #leftLogo {
+        display: none;
+    }
+    #rightLogo {
+        display: none;
+    }
+    form {
+        margin-top: auto;
+    }
+}
+
+@media all and (max-width:500px) {
+    form {
+        
+    }
+}
+
 @media all and (min-width:1280px) {
     #arksCard {
         width: 1000px;
