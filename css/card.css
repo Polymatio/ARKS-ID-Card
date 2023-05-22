@@ -219,9 +219,6 @@ form {
     form {
         margin-top: auto;
     }
-    #arksCard {
-        display: flex;
-    }
 }
 
 @media all and (max-width:500px) {
