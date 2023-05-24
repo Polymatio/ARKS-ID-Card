@@ -40,4 +40,5 @@ function generateArksCard() {
     document.getElementById("titleCenter").style.display= "none";
     document.getElementById("logoTitle").style.display= "none"; 
     document.getElementById("arksCardBuildSection").style.display= "none";
+    document.getElementById("arksLogo").style.display= "none";
 }

@@ -43,8 +43,14 @@ body{
     margin: 20px;
     padding: 15px;
 }
+#arksLogo {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    padding: 15px;
+    height: 300px;
+}
 #arksCardBuildSection {
-    height: 60vh;
     display: flex;
     justify-content: space-evenly;
 }
@@ -59,7 +65,7 @@ button:hover {
     transform: scale(1.1);
 }
 form {
-    margin-top: 120px;
+    margin-bottom: 50px;
     height: 480px;
     background-image: linear-gradient(to right, #192436, #284174, #1e4a97);
 }
@@ -201,23 +207,59 @@ form {
 /*Add media query to adjust size of ARKS Card from devices resolution*/
 
 @media all and (max-width:950px) {
+    /*ARKS ID Card form*/
+    /*Responsive logo*/
+    
     #logoTitle img {
         height: auto;
         display: flex;
         justify-content: center;
         width: 100%;
     }
+    /*Responsive height of ARKS form*/
+
     #arksCardBuildSection {
         height: auto;
     }
-    #leftLogo {
-        display: none;
-    }
-    #rightLogo {
-        display: none;
-    }
+    /*Responsive size of the form*/
+
     form {
-        margin-top: auto;
+        height: auto;
+    }
+    /*Adjust the display of .form-element*/
+
+    .form-element {
+        display: block;
+    }
+    .form-label {
+        text-align: center;
+    }
+    /*Adjust the display of .form-image*/
+
+    .form-image {
+        display: block;
+        margin-left: 20px;
+    }
+    .form-image input {
+        width: 75%;
+    }
+    /*Responsive input size*/
+    
+    input {
+        width: 100%;
+    }
+    /*Center bottom button in the form*/
+
+    #arksCardBuildSection button {
+        margin-top: 30px;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-bottom: 30px;
+    }
+    /*Hide ARKS logo*/
+
+    #arksLogo {
+        display: none;
     }
 }
 
