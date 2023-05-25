@@ -87,11 +87,15 @@ form {
     min-width: 150px;
 }
 /* Sets the ARKS-ID's Height and Width */
-
+#logoCardTitle {
+    display: none;
+    justify-content: center;
+    margin: 20px;
+    padding: 15px;
+}
 #arksCard{
     width:  75vw;
-    height: 41vh;
-    margin-top: 250px;
+    height: auto;
     display: none;
 }
 #arksCard > *{
@@ -129,6 +133,11 @@ form {
 .cardContainer>*{
     width: 50%;
 }
+/* Transparant border to avoid text contacting the character profile.*/
+
+.cardInformation {
+    border: 5px transparent solid;
+}
 /* Align the Right Side of the ARKS-ID Stacks the Picture on top of the banner If you want, you can put it below the banner by reversing the order in the HTML File.*/
 
 .cardPictures{
@@ -161,14 +170,14 @@ form {
 .stickerField{
     display:flex;
     justify-content: center;
-    height: 117px;
+    height: 86px;
     border-bottom: none;
 }
 .stickerField>*{
     width:100%;
 }
 #idSticker{
-    height:75%;
+    height:95%;
     background-position: center;
     background-size: cover;
 }
@@ -186,8 +195,8 @@ form {
     background-image: linear-gradient(to left, #5b7aaf, #133061);
     color: #ffffff;
     margin-top: 45px;
-    margin-left: 410px;
     font-size: 150%;
+    display: none;
 }
 
 /******************
@@ -261,11 +270,60 @@ form {
     #arksLogo {
         display: none;
     }
+    #logoCardTitle img {
+        height: auto;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
 }
 
-@media all and (max-width:500px) {
+@media all and (max-width:700px) {
+    #arksCard {
+        width: 100%;
+    }
     form {
         display: block;
+    }
+}
+
+@media all and (max-width:400px) {
+    .systemColor {
+        font-size: 12px;
+    }
+    #playerIDName {
+        font-size: 12px;
+    }
+    #playerID {
+        font-size: 12px;
+    }
+    #recentCharacter {
+        font-size: 12px;
+    }
+    #currentTeam {
+        font-size: 12px;
+    }
+}
+
+@media all and (max-width:375px) {
+    
+}
+
+@media all and (max-width:280px) {
+    .systemColor {
+        font-size: 12px;
+    }
+    #playerIDName {
+        font-size: 12px;
+    }
+    #playerID {
+        font-size: 12px;
+    }
+    #recentCharacter {
+        font-size: 12px;
+    }
+    #currentTeam {
+        font-size: 12px;
     }
 }
 

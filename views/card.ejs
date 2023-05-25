@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>ARKS-ID</title>
         <link rel="stylesheet" href="css/card.css">
+        <link rel="icon" type="image/record-icon" href="/css/assets/logos/ngs_arks_logo.jpg">
     </head>
     <body>
         <!-- Make the ARKS-ID-->
@@ -25,42 +26,42 @@
                     <label class="form-label">
                         Enter ARKS Title:
                     </label>
-                    <input type="text" id="insertCardTitle"/>
+                    <input type="text" id="insertCardTitle" maxlength="32"/>
                 </div>
                 <!--Form for Player ID Name-->
                 <div class="form-element">
                     <label class="form-label">
                         Enter Player ID Name:
                     </label>
-                    <input type="text" id="insertIDName"/>
+                    <input type="text" id="insertIDName" maxlength="32"/>
                 </div>
                 <!--Form for Player ID-->
                 <div class="form-element">
                     <label class="form-label">
                         Enter Player ID:
                     </label>
-                    <input type="text" id="insertPlayerName"/>
+                    <input type="text" id="insertPlayerName" maxlength="16"/>
                 </div>
                 <!--Form for Recent Character-->
                 <div class="form-element">
                     <label class="form-label">
                         Enter Recent Character:
                     </label>
-                    <input type="text" id="insertCharacter"/>
+                    <input type="text" id="insertCharacter" maxlength="32"/>
                 </div>
                 <!--For for team-->
                 <div class="form-element">
                     <label class="form-label">
                         Enter Team:
                     </label>
-                    <input type="text" id="insertTeam"/>
+                    <input type="text" id="insertTeam" maxlength="32"/>
                 </div>
                 <!--Form for Biography-->
                 <div class="form-element">
                     <label class="form-label">
                         Enter Biography:
                     </label>
-                    <input type="text" id="insertBio"/>
+                    <input type="text" id="insertBio" maxlength="320"/>
                 </div>
                 <!--Form for Image-->
                 <div class="form-image">
@@ -83,6 +84,9 @@
             <img src="/css/assets/logos/ngs_arks_logo.png">
         </section>
         <!--Side note: most of these IDs and classes are just made for easy access. If you need to change them, please don't hesitate to; it's for science!-->
+        <section id="logoCardTitle">
+            <a href="/"><img src="/css/assets/logos/ngs_title.png"></a>
+        </section>
         <section id="arksCard">
             <!-- Card Header -->
             <header class="cardHeader">
@@ -99,12 +103,12 @@
                     <!-- The Player's SEGA ID -->
                     <div class="playerIDNameField">
                         <span class="systemColor">Player ID Name</span>
-                        <span id="playerIDName" class="clear">Temporary</span>
+                        <span id="playerIDName">Temporary</span>
                     </div>
                     <!-- The Player ID (This can probably chnage if you want.) -->
                     <div class="playerIDField">
                         <span class="systemColor">Player ID</span>
-                        <span id="playerID" class="clear"></span>
+                        <span id="playerID"></span>
                     </div>
                     <!-- In the game, there's just an empty space, this is to recreate this. -->
                     <div>
@@ -114,12 +118,12 @@
                     <!-- Their most well-known character. -->
                     <div class="recentCharacterField">
                         <span class="systemColor">Current Character</span>
-                        <span id="recentCharacter" class="clear"></span>
+                        <span id="recentCharacter"></span>
                     </div>
                     <!-- Player current team. -->
                     <div class="teamField">
                         <span class="systemColor">Team</span>
-                        <span id="currentTeam" class="clear"></span>
+                        <span id="currentTeam"></span>
                     </div>
                     <!-- Player Biography -->
                     <div class="biography">
@@ -137,8 +141,8 @@
                     <div id="idPicture"></div>
                 </div>
             </main>
-            <button id="download">Download ARKS ID Card</button>
         </section>
+        <button id="download">Download ARKS ID Card</button>
         <!-- Button to download Arks ID Card as png-->
 
         <script src="js/main.js"></script>

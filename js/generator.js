@@ -34,7 +34,11 @@ function generateArksCard() {
     
     // Display final generated card to user  
     document.body.style.display ="flex"
+    document.body.style.flexFlow ="column"
+    document.body.style.alignItems ="center"
     document.getElementById("arksCard").style.display = "block";
+    document.getElementById("download").style.display = "block";
+    document.getElementById("logoCardTitle").style.display = "block";
 
     // Remove ARKS Card ID Generator form display
     document.getElementById("titleCenter").style.display= "none";
