@@ -310,6 +310,8 @@ form {
 }
 
 @media all and (max-width:280px) {
+    /*Resolution for Samsung Fold.*/
+    
     .systemColor {
         font-size: 12px;
     }
@@ -328,6 +330,8 @@ form {
 }
 
 @media all and (min-width:1280px) {
+    /*Adjust a minimum size before becoming responsive.*/
+
     #arksCard {
         width: 1000px;
         height: 650px;
