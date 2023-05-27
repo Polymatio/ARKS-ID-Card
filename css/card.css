@@ -276,18 +276,22 @@ form {
         justify-content: center;
         width: 100%;
     }
+    /*Make text hidden on lower resolution for longer biography*/
+
+    #biography {
+        overflow: hidden;
+    }
 }
 
 @media all and (max-width:700px) {
+    /*Resolution for devices max width of 700px*/
+
     #arksCard {
         width: 100%;
     }
     form {
         display: block;
     }
-}
-
-@media all and (max-width:400px) {
     .systemColor {
         font-size: 12px;
     }
@@ -303,11 +307,12 @@ form {
     #currentTeam {
         font-size: 12px;
     }
+    .stickerField {
+        height: 18%;
+    }
 }
 
-@media all and (max-width:375px) {
-    
-}
+
 
 @media all and (max-width:280px) {
     /*Resolution for Samsung Fold.*/
@@ -326,6 +331,9 @@ form {
     }
     #currentTeam {
         font-size: 12px;
+    }
+    .stickerField {
+        height: 80px;
     }
 }
 
