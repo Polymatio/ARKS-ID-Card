@@ -108,6 +108,7 @@ article {
 
 @media all and (max-width:950px) {
     /*Stack articles*/
+    
     main {
         height: auto;
     }
@@ -145,6 +146,7 @@ article {
     }
 }
 /*Max resolution 300p*/
+
 @media all and (max-width:300px) {
     main h1 {
         font-size: 200%;
@@ -166,3 +168,4 @@ article {
         height: 75px;
     }
 }
+
