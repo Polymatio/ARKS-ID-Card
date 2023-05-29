@@ -4,9 +4,12 @@
     box-sizing: border-box;
   }
 /* Outline for CSS Diagnosis */
+/* Import font style manually */
+@import 'https://raw.githubusercontent.com/Arks-Layer/PSO2ENPatchCSV/blob/EN/_fonts/DF-HeiSeiGothic-W7003.ttf';
 
 *{
     outline: black 1px solid;
+    font-family: 'DFGHSGothic-W7'; 
 }
 /* Clear fix hack */
 
@@ -102,6 +105,9 @@ article {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+}
+.socialLink img {
+    filter: invert(1);
 }
 /*Editting media queries for mobile and tablet*/
 /*Max resolution 950p*/

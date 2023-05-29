@@ -3,10 +3,11 @@
 * {
     box-sizing: border-box;
   }
-/* Outline for CSS Diagnosis */
+/* Outline for CSS Diagnosis */ 
 
 *{
     outline: black 1px solid;
+    font-family: 'Lucida Sans Regular', sans-serif;
 }
 /* Clear fix hack */
 
@@ -23,6 +24,7 @@
 .clear {
     clear: both;
 }
+
 /* Base work of css file*/
 
 body{
@@ -32,7 +34,7 @@ body{
     justify-content: center;
     align-content: center;
 }
-/*Set form for ARKS Card ID*/
+/*Adjust sizes of logo and text*/
 
 #titleCenter h1 {
     text-align: center;
@@ -50,6 +52,11 @@ body{
     padding: 15px;
     height: 300px;
 }
+#arksLogo img {
+    filter: invert(1);
+}
+/*Set form for ARKS Card ID*/
+
 #arksCardBuildSection {
     display: flex;
     justify-content: space-evenly;
@@ -66,7 +73,7 @@ button:hover {
 }
 form {
     margin-bottom: 50px;
-    height: 480px;
+    height: 655px;
     background-image: linear-gradient(to right, #192436, #284174, #1e4a97);
 }
 .form-element {
@@ -75,6 +82,7 @@ form {
     display: flex;
     justify-content: center;
     min-width: 200px;
+    flex-flow: column;
 }
 .form-image {
     margin-top: 15px;
@@ -112,8 +120,9 @@ form {
 #biography{
     background-color: #0d141e;
     width: 100%;
-    padding: 2%;
+    padding: 1%;
     height: 415px;
+    overflow: hidden;
 }
 /* Attaches the Header to the Main ARKS-ID. Disconnects if not set.*/
 
@@ -255,6 +264,9 @@ form {
     /*Responsive input size*/
     
     input {
+        width: 100%;
+    }
+    textarea {
         width: 100%;
     }
     /*Center bottom button in the form*/
