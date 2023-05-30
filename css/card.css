@@ -86,13 +86,7 @@ form {
 }
 .form-image {
     margin-top: 15px;
-    margin-left: 80px;
-    display: flex;
-    justify-content: center;
-    min-width: 200px;
-}
-.form-label {
-    min-width: 150px;
+    margin-left: 20px;
 }
 /* Sets the ARKS-ID's Height and Width */
 #logoCardTitle {
