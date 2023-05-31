@@ -38,6 +38,7 @@ body{
 
 #titleCenter h1 {
     text-align: center;
+    font-size: 2rem;
 }
 #logoTitle {
     display: flex;
@@ -68,14 +69,20 @@ body{
     color:#ffffff;
     font-size: 150%;
 }
+/*Hover animation of the button*/
+
 button:hover {
     transform: scale(1.1);
 }
+/*Set deminsions of the form*/
+
 form {
     margin-bottom: 50px;
     height: 655px;
     background-image: linear-gradient(to right, #192436, #284174, #1e4a97);
 }
+/*Angle the .form-element*/
+
 .form-element {
     margin: 10px;
     padding: 10px;
@@ -84,11 +91,14 @@ form {
     min-width: 200px;
     flex-flow: column;
 }
+/*Angle the .form-image*/
+
 .form-image {
     margin-top: 15px;
     margin-left: 20px;
 }
 /* Sets the ARKS-ID's Height and Width */
+
 #logoCardTitle {
     display: none;
     justify-content: center;
@@ -96,7 +106,7 @@ form {
     padding: 15px;
 }
 #arksCard{
-    width:  75vw;
+    width:  100%;
     height: auto;
     display: none;
 }
@@ -290,14 +300,17 @@ form {
 }
 
 @media all and (max-width:700px) {
-    /*Resolution for devices max width of 700px*/
+    /*Change display of form in 700px resolution*/
 
-    #arksCard {
-        width: 100%;
-    }
     form {
         display: block;
     }
+}
+
+@media all and (max-width:489px) {
+    /*Resolution for devices max width of 489px*/
+    /*Change text size to match resolution*/
+
     .systemColor {
         font-size: 12px;
     }
@@ -313,37 +326,41 @@ form {
     #currentTeam {
         font-size: 12px;
     }
+    /*Adjust hiehgt of banner for resolution*/
+
     .stickerField {
-        height: 18%;
+        height: 19%;
     }
 }
 
+@media all and (max-width:376px) {
+    /*Resolution for devices max width of 376px*/
+    /*Adjust height of banner for resolution*/
 
+    .stickerField {
+        height: 17%;
+    }
+}
+
+@media all and (max-width:353px) {
+    /*Resolution for devices max width of 353px*/
+    /*Adjust height of banner for resolution*/
+
+    .stickerField {
+        height: 15%;
+    }
+}
 
 @media all and (max-width:280px) {
     /*Resolution for Samsung Fold.*/
-    
-    .systemColor {
-        font-size: 12px;
-    }
-    #playerIDName {
-        font-size: 12px;
-    }
-    #playerID {
-        font-size: 12px;
-    }
-    #recentCharacter {
-        font-size: 12px;
-    }
-    #currentTeam {
-        font-size: 12px;
-    }
+    /*Adjust height of banner for resolution*/
+
     .stickerField {
-        height: 80px;
+        height: 90px;
     }
 }
 
-@media all and (min-width:1280px) {
+@media all and (min-width:1020px) {
     /*Adjust a minimum size before becoming responsive.*/
 
     #arksCard {
