@@ -18,4 +18,4 @@ npm install
 
 ## Optimization
 
-Create a database for users to add their save ARKS ID Card in the website. Build an API to counter-measure illegal activities in the website database. Custom background color for ARKS ID Cards. Better visuals on smaller mobile devices.
+Create a database for users to add their save ARKS ID Card in the website. Custom background color for ARKS ID Cards. Better visuals on smaller mobile devices. Better image download quaility for the ARKS Card.
