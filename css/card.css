@@ -6,8 +6,8 @@
 /* Outline for CSS Diagnosis */ 
 
 *{
-    outline: black 1px solid;
     font-family: 'Lucida Sans Regular', sans-serif;
+    outline: black 1px solid;
 }
 /* Clear fix hack */
 
@@ -35,7 +35,7 @@
     margin-block: .5em;
 }
 ::-webkit-scrollbar-thumb {
-    background: #133061;
+    background: #0f2346;
     border-radius: 100vw;
     border: .15em solid #121e36;
 }
