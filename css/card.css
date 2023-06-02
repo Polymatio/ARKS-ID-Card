@@ -24,7 +24,30 @@
 .clear {
     clear: both;
 }
+/* Base work of css file using "webkit-scrollbar". */
 
+::-webkit-scrollbar {
+    width: 1em;
+}
+::-webkit-scrollbar-track {
+    background: #090d14;
+    border-radius: 100vw;
+    margin-block: .5em;
+}
+::-webkit-scrollbar-thumb {
+    background: #133061;
+    border-radius: 100vw;
+    border: .15em solid #121e36;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #121e36;
+}
+@supports (scrollbar-color: #133061 black) {
+    * {
+        scrollbar-color: rgb(20, 28, 75) rgb(10, 10, 10);
+        scrollbar-width: thin;
+    }
+}
 /* Base work of css file*/
 
 body{

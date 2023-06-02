@@ -24,13 +24,37 @@
 .clear {
     clear: both;
 }
+/* Base work of css file using "webkit-scrollbar". */
+
+::-webkit-scrollbar {
+    width: 1em;
+}
+::-webkit-scrollbar-track {
+    background: #090d14;
+    border-radius: 100vw;
+    margin-block: .5em;
+}
+::-webkit-scrollbar-thumb {
+    background: #133061;
+    border-radius: 100vw;
+    border: .15em solid #121e36;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #121e36;
+}
+@supports (scrollbar-color: #133061 black) {
+    * {
+        scrollbar-color: rgb(20, 28, 75) rgb(10, 10, 10);
+        scrollbar-width: thin;
+    }
+}
 /* Base work of css file*/
-/*Edditing body*/
+/* Editting body*/
 
 body {
     background-image: linear-gradient(to right, #090d14, #121e36, #133061);
 }
-/*Editting main*/
+/* Editting main*/
 
 main {
     display:flex;
@@ -72,6 +96,8 @@ main p {
     align-items: center;
     justify-content: space-around;
 }
+/*Keep the text color the same after clicked*/
+
 .sampleContainer > a:visited {
     color: #ffffff;
 }
@@ -80,6 +106,8 @@ main p {
     height: 400px;
     background-image: linear-gradient(to top, #5b7aaf, #133061);
 }
+/*Color of the container text*/
+
 .sample > h2 {
     text-align: center;
     color: #ffffff;
@@ -88,6 +116,8 @@ main p {
     text-align: center;
     color: #ffffff;
 }
+/*Adjust the angle of the container*/
+
 article {
     display: flex;
     justify-content: space-around;
@@ -96,6 +126,62 @@ article {
 .sample > img {
     height: 200px;
     align-self: center;
+}
+/*editting the .lineContainer*/
+
+.lineContainer {
+    padding: 100px;
+}
+/*Deminsions of the lines*/
+
+.lines {
+    width: 100%;
+    height: 45px;
+    position: relative;
+}
+/*Make 2 lines on each side leaving the center open*/
+
+.lines::after, .lines::before {
+    content: '';
+    position: absolute;
+    margin: auto;
+    height: 2px;
+    background: #ffffff;
+    width: 45%;
+    top: 45%;
+}
+.lines::after {
+    left: 0;
+}
+.lines::before {
+    right: 0;
+}
+/*Add circle and put in middle*/
+
+.circle {
+    height: 40px;
+    width: 40px;
+    border: #ffffff 2px solid;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 50%;
+}
+/*Editting .copyright*/
+
+.copyright {
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px;
+}
+.copyright a {
+    text-decoration: none;
+}
+.copyright a:visited {
+    color: #ffffff;
 }
 /*Editting .socialLink*/
 
@@ -108,7 +194,7 @@ article {
     filter: invert(1);
 }
 /*Editting media queries for mobile and tablet*/
-/*Max resolution 950p*/
+/*Max resolution 950px*/
 
 @media all and (max-width:950px) {
     /*Stack articles*/
@@ -145,11 +231,21 @@ article {
     .sample img {
         height: 100px;
     }
+    .lines::after, .lines::before {
+        width: 40%;
+    }
     .socialLink {
         margin: 10px;
     }
 }
-/*Max resolution 300p*/
+/*Max resolution 600px*/
+
+@media all and (max-width:600px) {
+    .lines::after, .lines::before {
+        width: 30%;
+    }
+}
+/*Max resolution 300px*/
 
 @media all and (max-width:300px) {
     main h1 {
@@ -168,8 +264,20 @@ article {
     .sample p {
         display: none;
     }
+    .lineContainer {
+        display: none;
+    }
     .sample img {
         height: 75px;
     }
+    .socialLink {
+        margin: 25px;
+    }
 }
 
+
+@media all and (max-width:280px) {
+    .copyright {
+        padding-top: 15px;
+    }
+}
