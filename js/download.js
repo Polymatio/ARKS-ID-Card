@@ -9,8 +9,4 @@ document.getElementById("download").onclick = function() {
         anchor.click();
         anchor.remove();
     });
-
-    html2canvas(screenShotTarget, {
-        scale: 2
-    })
 }

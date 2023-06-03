@@ -5,32 +5,32 @@ function generateArksCard() {
 
     // Assign the value of player ID name to generated card
     const cardNameElement = document.getElementById("playerIDName");
-    cardNameElement.innerHTML = nameValue;
+    cardNameElement.innerText = nameValue;
 
     // Get value of biography from form input
     const titleValue = document.getElementById("insertCardTitle").value;
     // Assign the value of biography to generated card
-    document.getElementById("cardTitle").innerHTML = titleValue;
+    document.getElementById("cardTitle").innerText = titleValue;
     
     // Get value of college name from form input 
     const playerIDValue = document.getElementById("insertPlayerName").value;
     // Assign the value of college name to generated card
-    document.getElementById("playerID").innerHTML = playerIDValue;
+    document.getElementById("playerID").innerText = playerIDValue;
 
     // Get value of character name from form input 
     const characterValue = document.getElementById("insertCharacter").value;
     // Assign the value of location name to generated card
-    document.getElementById("recentCharacter").innerHTML = characterValue;
+    document.getElementById("recentCharacter").innerText = characterValue;
 
     // Get value of character team from form input
     const teamValue = document.getElementById("insertTeam").value
     // Assign the value of team to generate card
-    document.getElementById("currentTeam").innerHTML = teamValue
+    document.getElementById("currentTeam").innerText = teamValue
 
     // Get value of biography from form input
     const biographyValue = document.getElementById("insertBio").value;
     // Assign the value of biography to generated card
-    document.getElementById("biography").innerHTML = biographyValue;
+    document.getElementById("biography").innerText = biographyValue;
     
     // Display final generated card to user  
     document.body.style.display ="flex"
