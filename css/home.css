@@ -96,8 +96,10 @@ main p {
     align-items: center;
     justify-content: space-around;
 }
-/*Keep the text color the same after clicked*/
-
+/*Keep the text color the same before and after clicked*/
+.sampleContainer > a {
+    color: #ffffff;
+}
 .sampleContainer > a:visited {
     color: #ffffff;
 }
@@ -177,8 +179,11 @@ article {
     text-decoration: none;
     padding: 5px;
 }
+/*Keeping the color of text the same before and after clicked*/
+
 .copyright a {
     text-decoration: none;
+    color: #ffffff;
 }
 .copyright a:visited {
     color: #ffffff;
