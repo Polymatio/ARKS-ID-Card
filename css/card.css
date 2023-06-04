@@ -86,7 +86,7 @@ body{
     justify-content: space-evenly;
 }
 #arksCardBuildSection button {
-    margin-top: 50px;
+    margin-top: 30px;
     margin-left: 110px;
     background-image: linear-gradient(to left, #5b7aaf, #133061);
     color:#ffffff;
